@@ -8,7 +8,7 @@ import {RestangularConfigurer} from "./ngx-restangular-config.factory";
 
 @Injectable()
 export class Restangular {
-  provider: {
+  protected provider: {
     setBaseUrl: any,
     setDefaultHeaders: any,
     configuration: any,
@@ -48,62 +48,62 @@ export class Restangular {
     setFullResponse: any,
     $get: any
   };
-  extendCollection;
-  copy;
-  configuration;
-  service;
-  id;
-  route;
-  parentResource;
-  restangularCollection;
-  cannonicalId;
-  etag;
-  selfLink;
-  get;
-  getList;
-  put;
-  post;
-  remove;
-  head;
-  trace;
-  options;
-  patch;
-  getRestangularUrl;
-  getRequestedUrl;
-  putElement;
-  addRestangularMethod;
-  getParentList;
-  clone;
-  ids;
-  httpConfig;
-  reqParams;
-  one;
-  all;
-  several;
-  oneUrl;
-  allUrl;
-  customPUT;
-  customPATCH;
-  customPOST;
-  customDELETE;
-  customGET;
-  customGETLIST;
-  customOperation;
-  doPUT;
-  doPATCH;
-  doPOST;
-  doDELETE;
-  doGET;
-  doGETLIST;
-  fromServer;
-  withConfig;
-  withHttpConfig;
-  singleOne;
-  plain;
-  save;
-  restangularized;
-  restangularizeElement;
-  restangularizeCollection;
+  protected extendCollection;
+  protected copy;
+  protected configuration;
+  protected service;
+  protected id;
+  protected route;
+  protected parentResource;
+  protected restangularCollection;
+  protected cannonicalId;
+  protected etag;
+  protected selfLink;
+  protected get;
+  protected getList;
+  protected put;
+  protected post;
+  protected remove;
+  protected head;
+  protected trace;
+  protected options;
+  protected patch;
+  protected getRestangularUrl;
+  protected getRequestedUrl;
+  protected putElement;
+  protected addRestangularMethod;
+  protected getParentList;
+  protected clone;
+  protected ids;
+  protected httpConfig;
+  protected reqParams;
+  protected one;
+  protected all;
+  protected several;
+  protected oneUrl;
+  protected allUrl;
+  protected customPUT;
+  protected customPATCH;
+  protected customPOST;
+  protected customDELETE;
+  protected customGET;
+  protected customGETLIST;
+  protected customOperation;
+  protected doPUT;
+  protected doPATCH;
+  protected doPOST;
+  protected doDELETE;
+  protected doGET;
+  protected doGETLIST;
+  protected fromServer;
+  protected withConfig;
+  protected withHttpConfig;
+  protected singleOne;
+  protected plain;
+  protected save;
+  protected restangularized;
+  protected restangularizeElement;
+  protected restangularizeCollection;
   
   constructor(
     @Optional() @Inject(RESTANGULAR) public configObj,
